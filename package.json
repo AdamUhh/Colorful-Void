@@ -1,0 +1,21 @@
+{
+    "name": "colorful-void",
+    "displayName": "Colorful Void",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.61.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Colorful Void",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Colorful Void-color-theme.json"
+            }
+        ]
+    }
+}

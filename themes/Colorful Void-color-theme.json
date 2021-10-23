@@ -529,7 +529,8 @@
         {
             "name": "JS Object Key inside Parameter",
             "scope": [
-                "source.js meta.arrow.js meta.block.js meta.arrow.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js"
+                "source.js meta.arrow.js meta.block.js meta.arrow.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js",
+                "source.js meta.var.expr.js meta.arrow.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js"
             ],
             "settings": {
                 "foreground": "#7FDBCA"

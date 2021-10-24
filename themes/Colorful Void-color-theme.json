@@ -275,14 +275,19 @@
         //*  HTML
         {
             "name": "HTML Quotes (Single and Double)",
-            "scope": ["string.quoted.single.html", "string.quoted.double.html"],
+            "scope": [
+                "string.quoted.single.html",
+                "string.quoted.double.html",
+                "string.quoted.single.handlebars",
+                "string.quoted.double.handlebars"
+            ],
             "settings": {
                 "foreground": "#7FDBB1"
             }
         },
         {
             "name": "HTML Default Color",
-            "scope": ["text.html.derivative"],
+            "scope": ["text.html.derivative", "text.html.handlebars"],
             "settings": {
                 "foreground": "#dddddd"
             }
@@ -308,7 +313,13 @@
         },
         {
             "name": "HTML Tags ( Inside < > )",
-            "scope": ["entity.name.tag.html"],
+            "scope": [
+                "entity.name.tag.html",
+                "entity.name.tag.structure.any.html",
+                "entity.name.tag.inline.any.html",
+                "entity.name.tag.block.any.html",
+                "entity.name.tag.script.html"
+            ],
             "settings": {
                 "foreground": "#F78C6C"
             }
@@ -320,12 +331,20 @@
                 "foreground": "#70BAFF"
             }
         },
+
         // * HTML AND JS (Like EJS)
         {
             "name": "HTML and JS Default Color",
             "scope": ["meta.tag.metadata.script.ejs"],
             "settings": {
                 "foreground": "#BDC0C5"
+            }
+        },
+        {
+            "name": "Handlebars/hbs",
+            "scope": ["meta.function.inline.other.handlebars"],
+            "settings": {
+                "foreground": "#ADDB67"
             }
         },
 
@@ -524,13 +543,16 @@
             ],
             "settings": {
                 "foreground": "#E06C75"
+                // "foreground": "#d48b91"
             }
         },
         {
             "name": "JS Object Key inside Parameter",
             "scope": [
                 "source.js meta.arrow.js meta.block.js meta.arrow.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js",
-                "source.js meta.var.expr.js meta.arrow.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js"
+                "source.js meta.var.expr.js meta.arrow.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js",
+                "source.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js",
+                "source.js variable.other.constant.property.js"
             ],
             "settings": {
                 "foreground": "#7FDBCA"
@@ -781,6 +803,15 @@
             "scope": ["variable.interpolation.scss"],
             "settings": {
                 "foreground": "#ADDB67"
+            }
+        },
+        {
+            "name": "CSS variable inside interpolation ${}",
+            "scope": [
+                "source.js string.template.js meta.template.expression.js meta.embedded.line.js variable.other.constant.js"
+            ],
+            "settings": {
+                "foreground": "#F76F6C"
             }
         },
         {

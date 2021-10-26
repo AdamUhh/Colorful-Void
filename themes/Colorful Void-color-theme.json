@@ -524,14 +524,16 @@
             "name": "JS Variable Boolean",
             "scope": ["constant.language.boolean.true.js"],
             "settings": {
-                "foreground": "#C678DD"
+                "foreground": "#D19A66"
+                // "foreground": "#C678DD"
             }
         },
         {
             "name": "JS Variable Boolean",
             "scope": ["constant.language.boolean.false.js"],
             "settings": {
-                "foreground": "#C678DD"
+                "foreground": "#D19A66"
+                // "foreground": "#C678DD"
             }
         },
         {
@@ -642,7 +644,9 @@
                 "punctuation.section.property-list.begin.bracket.curly.css",
                 "punctuation.section.property-list.end.bracket.curly.css",
                 "punctuation.section.property-list.begin.bracket.curly.scss",
-                "punctuation.section.property-list.end.bracket.curly.scss"
+                "punctuation.section.property-list.end.bracket.curly.scss",
+                "punctuation.section.keyframes.begin.scss",
+                "punctuation.section.keyframes.end.scss"
             ],
             "settings": {
                 "foreground": "#ADDB67"
@@ -676,7 +680,10 @@
         },
         {
             "name": "CSS Selector",
-            "scope": ["meta.selector.css"],
+            "scope": [
+                "meta.selector.css",
+                "entity.other.attribute-name.class.css"
+            ],
             "settings": {
                 "foreground": "#FBB26E"
             }
@@ -686,7 +693,8 @@
             "scope": [
                 "entity.name.tag.css",
                 "entity.other.attribute-name.pseudo-class.css",
-                "entity.name.tag.wildcard.scss"
+                "entity.name.tag.wildcard.scss",
+                "meta.at-rule.keyframes.scss"
             ],
             "settings": {
                 "foreground": "#f19a7f"
@@ -754,16 +762,32 @@
         },
         {
             "name": "CSS Import word",
-            "scope": ["keyword.control.at-rule.import.css"],
+            "scope": [
+                "keyword.control.at-rule.import.css",
+                "keyword.control.at-rule.media.scss",
+                "keyword.control.at-rule.keyframes.scss"
+            ],
             "settings": {
                 "foreground": "#FFA800"
             }
         },
         {
             "name": "CSS import @ rule",
-            "scope": ["punctuation.definition.keyword.css"],
+            "scope": [
+                "punctuation.definition.keyword.css",
+                "punctuation.definition.keyword.scss"
+            ],
             "settings": {
                 "foreground": "#CF9832"
+            }
+        },
+        {
+            "name": "CSS keyframes number",
+            "scope": [
+                "entity.other.attribute-name.scss"
+            ],
+            "settings": {
+                "foreground": "#FFC048"
             }
         },
         {

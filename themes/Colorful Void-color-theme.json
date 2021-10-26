@@ -465,6 +465,13 @@
             }
         },
         {
+            "name": "JS Variable try catch word",
+            "scope": ["keyword.control.trycatch.js"],
+            "settings": {
+                "foreground": "#C678DDd9"
+            }
+        },
+        {
             "name": "JS Variable module.exports word",
             "scope": ["source.js support.type.object.module.js"],
             "settings": {
@@ -555,7 +562,8 @@
                 "source.js variable.other.constant.property.js"
             ],
             "settings": {
-                "foreground": "#7FDBCA"
+                "foreground": "#ADDB67"
+                // "foreground": "#7FDBCA"
             }
         },
         {
@@ -574,6 +582,15 @@
             ],
             "settings": {
                 "foreground": "#7FC079Ff"
+            }
+        },
+        {
+            "name": "JS Object Value(Single) Default",
+            "scope": [
+                "source.js meta.var.expr.js meta.arrow.js meta.block.js switch-statement.expr.js switch-block.expr.js meta.objectliteral.js meta.object.member.js variable.other.readwrite.js"
+            ],
+            "settings": {
+                "foreground": "#7FC079"
             }
         },
         {
@@ -605,7 +622,7 @@
         },
         {
             "name": "JS HTML Tag in JS",
-            "scope": ["meta.function.js"],
+            "scope": ["meta.function.js", "entity.name.tag.js"],
             "settings": {
                 "foreground": "#F78C6C"
                 // "foreground": "#E06C75"
@@ -870,6 +887,13 @@
             ],
             "settings": {
                 "foreground": "#eaf2ffee"
+            }
+        },
+        {
+            "name": "CSS interpolation arrow and operators",
+            "scope": ["source.js meta.var.expr.js variable.other.readwrite.ts"],
+            "settings": {
+                "foreground": "#47CBFF"
             }
         },
 

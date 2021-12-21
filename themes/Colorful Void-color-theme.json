@@ -305,7 +305,11 @@
         },
         {
             "name": "HTML Secondary < >",
-            "scope": ["keyword.operator.relational.js"],
+            "scope": [
+                "keyword.operator.relational.js",
+                "keyword.operator.relational.ts",
+                "keyword.operator.relational.tsx"
+            ],
             // "scope": ["meta.tag.metadata.script.ejs"],
             "settings": {
                 "foreground": "#BDC0C5"
@@ -351,14 +355,21 @@
         // * JS
         {
             "name": "JS Default Color (All brackets are affected)",
-            "scope": ["source.js"],
+            "scope": ["source.js", "source.ts", "source.jtsx"],
             "settings": {
                 "foreground": "#eaf2ffee"
             }
         },
         {
             "name": "JS Quotes (Single and Double)",
-            "scope": ["string.quoted.single.js", "string.quoted.double.js"],
+            "scope": [
+                "string.quoted.single.js",
+                "string.quoted.double.js",
+                "string.quoted.single.ts",
+                "string.quoted.double.ts",
+                "string.quoted.single.tsx",
+                "string.quoted.double.tsx"
+            ],
             "settings": {
                 "foreground": "#FFD770"
             }
@@ -367,7 +378,11 @@
             "name": "JS Conditional/Loop",
             "scope": [
                 "keyword.control.conditional.js",
-                "keyword.control.loop.js"
+                "keyword.control.loop.js",
+                "keyword.control.conditional.ts",
+                "keyword.control.loop.ts",
+                "keyword.control.conditional.tsx",
+                "keyword.control.loop.tsx"
             ],
             "settings": {
                 "foreground": "#C678DD"
@@ -375,14 +390,22 @@
         },
         {
             "name": "JS Conditional Variable",
-            "scope": ["variable.other.object.js"],
+            "scope": [
+                "variable.other.object.js",
+                "variable.other.object.ts",
+                "variable.other.object.tsx"
+            ],
             "settings": {
                 "foreground": "#47CBFF"
             }
         },
         {
             "name": "JS Conditional Variable Properties Property",
-            "scope": ["variable.other.object.property.js"],
+            "scope": [
+                "variable.other.object.property.js",
+                "variable.other.object.property.ts",
+                "variable.other.object.property.tsx"
+            ],
             "settings": {
                 "foreground": "#ADDB67"
             }
@@ -391,7 +414,11 @@
             "name": "JS Conditional Variable Property",
             "scope": [
                 "support.variable.property.js",
-                "variable.other.property.js"
+                "variable.other.property.js",
+                "support.variable.property.ts",
+                "variable.other.property.ts",
+                "support.variable.property.tsx",
+                "variable.other.property.tsx"
             ],
             "settings": {
                 "foreground": "#82AAFF"
@@ -399,21 +426,29 @@
         },
         {
             "name": "JS Conditional Compare",
-            "scope": ["constant.numeric.decimal.js"],
+            "scope": [
+                "constant.numeric.decimal.js",
+                "constant.numeric.decimal.ts",
+                "constant.numeric.decimal.tsx"
+            ],
             "settings": {
                 "foreground": "#FEE01A"
             }
         },
         {
             "name": "JS Switch",
-            "scope": ["switch-statement.expr.js"],
+            "scope": [
+                "switch-statement.expr.js",
+                "switch-statement.expr.ts",
+                "switch-statement.expr.tsx"
+            ],
             "settings": {
                 "foreground": "#cfd0d0"
             }
         },
         {
             "name": "JS Function Content Default Color",
-            "scope": ["meta.arrow.js"],
+            "scope": ["meta.arrow.js", "meta.arrow.ts", "meta.arrow.tsx"],
             "settings": {
                 "foreground": "#eaf2ffee"
             }
@@ -422,7 +457,11 @@
             "name": "JS Function Arrow Bracket",
             "scope": [
                 "punctuation.definition.block.js",
-                "meta.brace.square.js"
+                "meta.brace.square.js",
+                "punctuation.definition.block.ts",
+                "meta.brace.square.ts",
+                "punctuation.definition.block.tsx",
+                "meta.brace.square.tsx"
             ],
             "settings": {
                 "foreground": "#7FDBCA"
@@ -430,99 +469,194 @@
         },
         {
             "name": "JS Function Arrow Parameter",
-            "scope": ["meta.parameters.js", "variable.parameter.js"],
+            "scope": [
+                "meta.parameters.js",
+                "variable.parameter.js",
+                "meta.parameters.ts",
+                "variable.parameter.ts",
+                "meta.parameters.tsx",
+                "variable.parameter.tsx"
+            ],
             "settings": {
                 "foreground": "#7FDBCA"
             }
         },
         {
             "name": "JS Function Call Property",
-            "scope": ["meta.function-call.js"],
+            "scope": [
+                "meta.function-call.js",
+                "meta.function-call.ts",
+                "meta.function-call.tsx"
+            ],
             "settings": {
                 "foreground": "#F76F6C"
             }
         },
         {
             "name": "JS Function (Unsure what to call this)",
-            "scope": ["storage.type.function.js"],
+            "scope": [
+                "storage.type.function.js",
+                "storage.type.function.ts",
+                "storage.type.function.tsx"
+            ],
             "settings": {
                 "foreground": "#C681DD"
             }
         },
         {
             "name": "JS Function Name",
-            "scope": ["meta.definition.function.js"],
+            "scope": [
+                "meta.definition.function.js",
+                "meta.definition.function.ts",
+                "meta.definition.function.tsx"
+            ],
             "settings": {
                 "foreground": "#82AAFF"
+            }
+        },
+        {
+            "name": "TS Interface/Types",
+            "scope": [
+                "storage.type.interface.ts",
+                "storage.type.interface.tsx"
+            ],
+            "settings": {
+                "foreground": "#47CBFF"
+            }
+        },
+        {
+            "name": "TS Interface/Types Name",
+            "scope": [
+               "entity.name.type.interface.ts",
+               "entity.name.type.interface.tsx"
+            ],
+            "settings": {
+                "foreground": "#82AAFF"
+            }
+        },
+        {
+            "name": "TS Interface/Types Property",
+            "scope": [
+               "variable.object.property.ts",
+               "variable.object.property.tsx",
+            ],
+            "settings": {
+                "foreground": "#ADDB67"
+            }
+        },
+        {
+            "name": "TS Interface/Types Property -> Value",
+            "scope": [
+               "support.type.primitive.ts",
+               "support.type.primitive.tsx"
+            ],
+            "settings": {
+                "foreground": "#D19A66"
             }
         },
 
         {
             "name": "JS Variable Default Color",
-            "scope": ["meta.var.expr.js"],
+            "scope": [
+                "meta.var.expr.js",
+                "meta.var.expr.ts",
+                "meta.var.expr.tsx"
+            ],
             "settings": {
                 "foreground": "#61BBFF"
             }
         },
         {
             "name": "JS Variable try catch word",
-            "scope": ["keyword.control.trycatch.js"],
+            "scope": [
+                "keyword.control.trycatch.js",
+                "keyword.control.trycatch.ts",
+                "keyword.control.trycatch.tsx"
+            ],
             "settings": {
                 "foreground": "#C678DDd9"
             }
         },
         {
             "name": "JS Variable module.exports word",
-            "scope": ["source.js support.type.object.module.js"],
+            "scope": [
+                "source.js support.type.object.module.js",
+                "source.ts support.type.object.module.ts",
+                "source.tsx support.type.object.module.tsx"
+            ],
             "settings": {
                 "foreground": "#C678DDC9"
             }
         },
         {
             "name": "JS Variable Export word",
-            "scope": ["keyword.control.export.js"],
+            "scope": [
+                "keyword.control.export.js",
+                "keyword.control.export.ts",
+                "keyword.control.export.tsx"
+            ],
             "settings": {
                 "foreground": "#C678DDC9"
             }
         },
         {
             "name": "JS Variable Import word",
-            "scope": ["keyword.control.import.js"],
+            "scope": [
+                "keyword.control.import.js",
+                "keyword.control.import.ts",
+                "keyword.control.import.tsx"
+            ],
             "settings": {
                 "foreground": "#C678DD"
             }
         },
         {
             "name": "JS Variable Const word",
-            "scope": ["storage.type.js"],
+            "scope": ["storage.type.js", "storage.type.ts", "storage.type.tsx"],
             "settings": {
                 "foreground": "#C678DD"
             }
         },
         {
             "name": "JS Variable Return word",
-            "scope": ["keyword.control.flow.js"],
+            "scope": [
+                "keyword.control.flow.js",
+                "keyword.control.flow.ts",
+                "keyword.control.flow.tsx"
+            ],
             "settings": {
                 "foreground": "#C678DD"
             }
         },
         {
             "name": "JS Variable Default word",
-            "scope": ["keyword.control.default.js"],
+            "scope": [
+                "keyword.control.default.js",
+                "keyword.control.default.ts",
+                "keyword.control.default.tsx"
+            ],
             "settings": {
                 "foreground": "#C678DD"
             }
         },
         {
             "name": "JS Variable From word",
-            "scope": ["keyword.control.from.js"],
+            "scope": [
+                "keyword.control.from.js",
+                "keyword.control.from.ts",
+                "keyword.control.from.tsx"
+            ],
             "settings": {
                 "foreground": "#FBB26E"
             }
         },
         {
             "name": "JS Variable Boolean",
-            "scope": ["constant.language.boolean.true.js"],
+            "scope": [
+                "constant.language.boolean.true.js",
+                "constant.language.boolean.true.ts",
+                "constant.language.boolean.true.tsx"
+            ],
             "settings": {
                 "foreground": "#D19A66"
                 // "foreground": "#C678DD"
@@ -530,7 +664,11 @@
         },
         {
             "name": "JS Variable Boolean",
-            "scope": ["constant.language.boolean.false.js"],
+            "scope": [
+                "constant.language.boolean.false.js",
+                "constant.language.boolean.false.ts",
+                "constant.language.boolean.false.tsx"
+            ],
             "settings": {
                 "foreground": "#D19A66"
                 // "foreground": "#C678DD"
@@ -538,7 +676,11 @@
         },
         {
             "name": "JS Variable semicolon word",
-            "scope": ["punctuation.terminator.statement.js"],
+            "scope": [
+                "punctuation.terminator.statement.js",
+                "punctuation.terminator.statement.ts",
+                "punctuation.terminator.statement.tsx"
+            ],
             "settings": {
                 "foreground": "#eaf2ffee"
             }
@@ -548,7 +690,11 @@
             "name": "JS Variable Name",
             "scope": [
                 "meta.definition.variable.js",
-                "variable.other.constant.js"
+                "variable.other.constant.js",
+                "meta.definition.variable.ts",
+                "variable.other.constant.ts",
+                "meta.definition.variable.tsx",
+                "variable.other.constant.tsx"
             ],
             "settings": {
                 "foreground": "#E06C75"
@@ -561,7 +707,15 @@
                 "source.js meta.arrow.js meta.block.js meta.arrow.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js",
                 "source.js meta.var.expr.js meta.arrow.js meta.block.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js",
                 "source.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js",
-                "source.js variable.other.constant.property.js"
+                "source.js variable.other.constant.property.js",
+                "source.ts meta.arrow.ts meta.block.ts meta.arrow.ts meta.block.ts meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts",
+                "source.ts meta.var.expr.ts meta.arrow.ts meta.block.ts meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts",
+                "source.ts meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts",
+                "source.ts variable.other.constant.property.ts",
+                "source.tsx meta.arrow.tsx meta.block.tsx meta.arrow.tsx meta.block.tsx meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx",
+                "source.tsx meta.var.expr.tsx meta.arrow.tsx meta.block.tsx meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx",
+                "source.tsx meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx",
+                "source.tsx variable.other.constant.property.tsx"
             ],
             "settings": {
                 "foreground": "#ADDB67"
@@ -571,7 +725,9 @@
         {
             "name": "JS Object Key",
             "scope": [
-                "source.js meta.var.expr.js new.expr.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js "
+                "source.js meta.var.expr.js new.expr.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js ",
+                "source.ts meta.var.expr.ts new.expr.ts meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts ",
+                "source.tsx meta.var.expr.tsx new.expr.tsx meta.objectliteral.tsx meta.object.member.tsx meta.object-literal.key.tsx "
             ],
             "settings": {
                 "foreground": "#7FDBCA"
@@ -580,7 +736,9 @@
         {
             "name": "SubObject",
             "scope": [
-                "source.js meta.var.expr.js new.expr.js meta.objectliteral.js meta.object.member.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js"
+                "source.js meta.var.expr.js new.expr.js meta.objectliteral.js meta.object.member.js meta.objectliteral.js meta.object.member.js meta.object-literal.key.js",
+                "source.ts meta.var.expr.ts new.expr.ts meta.objectliteral.ts meta.object.member.ts meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts",
+                "source.tsx meta.var.expr.tsx new.expr.ts xmeta.objectliteral.tsx meta.object.member.tsx meta.objectliteral.tsx meta.object.member.ts xmeta.object-literal.key.tsx"
             ],
             "settings": {
                 "foreground": "#7FC079Ff"
@@ -589,7 +747,9 @@
         {
             "name": "JS Object Value(Single) Default",
             "scope": [
-                "source.js meta.var.expr.js meta.arrow.js meta.block.js switch-statement.expr.js switch-block.expr.js meta.objectliteral.js meta.object.member.js variable.other.readwrite.js"
+                "source.js meta.var.expr.js meta.arrow.js meta.block.js switch-statement.expr.js switch-block.expr.js meta.objectliteral.js meta.object.member.js variable.other.readwrite.js",
+                "source.ts meta.var.expr.ts meta.arrow.ts meta.block.ts switch-statement.expr.ts switch-block.expr.ts meta.objectliteral.ts meta.object.member.ts variable.other.readwrite.ts",
+                "source.tsx meta.var.expr.ts xmeta.arrow.tsx meta.block.tsx switch-statement.expr.tsx switch-block.expr.ts xmeta.objectliteral.tsx meta.object.member.tsx variable.other.readwrite.tsx"
             ],
             "settings": {
                 "foreground": "#7FC079"
@@ -599,7 +759,11 @@
             "name": "JS Object Value(Single)",
             "scope": [
                 "variable.other.readwrite.js",
-                "keyword.operator.spread.js"
+                "keyword.operator.spread.js",
+                "variable.other.readwrite.ts",
+                "keyword.operator.spread.ts",
+                "variable.other.readwrite.tsx",
+                "keyword.operator.spread.tsx"
             ],
             "settings": {
                 "foreground": "#ADDB67"
@@ -607,7 +771,11 @@
         },
         {
             "name": "JS Object Value(Single)",
-            "scope": ["variable.other.readwrite.alias.js"],
+            "scope": [
+                "variable.other.readwrite.alias.js",
+                "variable.other.readwrite.alias.ts",
+                "variable.other.readwrite.alias.tsx"
+            ],
             "settings": {
                 "foreground": "#F78C6C"
             }
@@ -616,7 +784,11 @@
             "name": "JS HTML < >",
             "scope": [
                 "punctuation.definition.tag.begin.js",
-                "punctuation.definition.tag.end.js"
+                "punctuation.definition.tag.end.js",
+                "punctuation.definition.tag.begin.ts",
+                "punctuation.definition.tag.end.ts",
+                "punctuation.definition.tag.begin.tsx",
+                "punctuation.definition.tag.end.tsx"
             ],
             "settings": {
                 "foreground": "#BDC0C5"
@@ -624,7 +796,14 @@
         },
         {
             "name": "JS HTML Tag in JS",
-            "scope": ["meta.function.js", "entity.name.tag.js"],
+            "scope": [
+                "meta.function.js",
+                "entity.name.tag.js",
+                "meta.function.ts",
+                "entity.name.tag.ts",
+                "meta.function.tsx",
+                "entity.name.tag.tsx"
+            ],
             "settings": {
                 "foreground": "#F78C6C"
                 // "foreground": "#E06C75"
@@ -632,7 +811,11 @@
         },
         {
             "name": "JS HTML Attribute in JS",
-            "scope": ["meta.tag.attributes.js"],
+            "scope": [
+                "meta.tag.attributes.js",
+                "meta.tag.attributes.ts",
+                "meta.tag.attributes.tsx"
+            ],
             "settings": {
                 "foreground": "#70BAFF"
             }
@@ -783,9 +966,7 @@
         },
         {
             "name": "CSS keyframes number",
-            "scope": [
-                "entity.other.attribute-name.scss"
-            ],
+            "scope": ["entity.other.attribute-name.scss"],
             "settings": {
                 "foreground": "#FFC048"
             }
